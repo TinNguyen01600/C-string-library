@@ -44,3 +44,8 @@ In case of null pointer, the function will return NULL*/
 
 char * my_strdupl(char *s);
 /*----------------------------------------------------------------------------------------------------------------*/
+
+/*Appends the string pointed to, by src to the end of the string pointed to by dest.*/
+
+char *strcat(char *dest, const char *src);
+/*----------------------------------------------------------------------------------------------------------------*/
