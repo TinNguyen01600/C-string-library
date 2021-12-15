@@ -89,3 +89,7 @@ char * my_strdupl(char *s){
 	b[size] = '\0';
 	return b;
 }
+
+char *strcat(char *dest, const char *src){
+    
+}
