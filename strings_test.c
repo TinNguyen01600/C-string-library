@@ -134,6 +134,15 @@ assert(my_strdupl(0)==NULL);
 fprintf(stderr,"Ok\n");
 
 /*************************/
+fprintf(stderr,"strdcat: ");
+
+char src_str[100], dest_str[100];
+my_strcpy(dest_str,"This is a test ");
+my_strcpy(src_str, "of strcat() function");
+
+fprintf(stderr,"Ok\n");
+
+/*************************/
 
 fprintf(stderr,"\n All functions work perfectly\n");
 
