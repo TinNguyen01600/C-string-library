@@ -134,11 +134,22 @@ assert(my_strdupl(0)==NULL);
 fprintf(stderr,"Ok\n");
 
 /*************************/
-fprintf(stderr,"strdcat: ");
+fprintf(stderr,"strcat: ");
 
 char src_str[100], dest_str[100];
 my_strcpy(dest_str,"This is a test ");
 my_strcpy(src_str, "of strcat() function");
+my_strcpy(test_string, "This is a test of strcat() function");
+d = my_strcat(dest_str, src_str);
+assert(my_strcmp(test_string,d)==0);
+assert(d!=test_string);
+
+my_strcpy(dest_str,"This is a test ");
+my_strcpy(src_str, "");
+my_strcpy(test_string, "This is a test ");
+d = my_strcat(dest_str, src_str);
+assert(my_strcmp(test_string,d)==0);
+assert(d!=test_string);
 
 fprintf(stderr,"Ok\n");
 
