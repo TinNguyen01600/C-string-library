@@ -90,6 +90,19 @@ char * my_strdupl(char *s){
 	return b;
 }
 
-char *my_strcat(char *dest, const char *src){
-
+char *my_strcat(char *dest, char *src){
+    int size_d = my_strlen(dest);
+    int size_s = my_strlen(src);
+    int size = size_d + size_s;
+    int k = 0;
+    char *b = (char *) malloc((size + 1) * sizeof(char));
+    for(int i = 0; i<size_d; i++){
+        b[i] = dest[i];
+    }
+    for (int i = size_d; i<size; i++){
+        b[i] = src[k];
+        k++;
+    }
+    b[size] = '\0';
+	return b;
 }

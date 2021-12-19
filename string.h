@@ -47,5 +47,5 @@ char * my_strdupl(char *s);
 
 /*Appends the string pointed to, by src to the end of the string pointed to by dest.*/
 
-char *my_strcat(char *dest, const char *src);
+char *my_strcat(char *dest, char *src);
 /*----------------------------------------------------------------------------------------------------------------*/
