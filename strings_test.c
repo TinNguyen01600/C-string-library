@@ -151,6 +151,8 @@ d = my_strcat(dest_str, src_str);
 assert(my_strcmp(test_string,d)==0);
 assert(d!=test_string);
 
+assert(my_strcat(0,0) == NULL);
+
 fprintf(stderr,"Ok\n");
 
 /*************************/

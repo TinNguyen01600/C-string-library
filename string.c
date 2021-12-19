@@ -91,6 +91,7 @@ char * my_strdupl(char *s){
 }
 
 char *my_strcat(char *dest, char *src){
+    if(dest == NULL && src == NULL) return NULL;
     int size_d = my_strlen(dest);
     int size_s = my_strlen(src);
     int size = size_d + size_s;
